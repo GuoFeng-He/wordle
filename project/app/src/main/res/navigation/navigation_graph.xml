@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/start2">
+
+    <fragment
+        android:id="@+id/start2"
+        android:name="com.example.project.Start"
+        android:label=""
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_start2_to_game"
+            app:destination="@id/game"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/game"
+        android:name="com.example.project.game"
+        android:label=""
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_game_to_loseScreen"
+            app:destination="@id/loseScreen"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_game_to_winScreen"
+            app:destination="@id/winScreen"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/loseScreen"
+        android:name="com.example.project.loseScreen"
+        android:label="Return to Game"
+        tools:layout="@layout/fragment_lose_screen" >
+        <action
+            android:id="@+id/action_loseScreen_to_start2"
+            app:destination="@id/start2"
+            app:enterAnim="@android:anim/fade_in"
+            app:popUpTo="@id/start2"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/winScreen"
+        android:name="com.example.project.winScreen"
+        android:label="Return to Game"
+        tools:layout="@layout/fragment_win_screen" >
+        <action
+            android:id="@+id/action_winScreen_to_start2"
+            app:destination="@id/start2"
+            app:enterAnim="@android:anim/fade_in"
+            app:popUpTo="@id/start2"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

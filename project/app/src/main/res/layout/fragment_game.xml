@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F8E2"
+    tools:context=".game"
+    tools:layout_editor_absoluteX="2dp"
+    tools:layout_editor_absoluteY="13dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="@string/title"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="#DDD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/box1"
+        style="@style/letterBox"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/box2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/box2"
+        style="@style/letterBox"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/box3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/box1"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/box3"
+        style="@style/letterBox"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/box4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/box2"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/box4"
+        style="@style/letterBox"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/box5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/box3"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/box5"
+        style="@style/letterBox"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toEndOf="@+id/box4"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/box9"
+        style="@style/letterBox"
+        app:layout_constraintEnd_toEndOf="@+id/box4"
+        app:layout_constraintStart_toStartOf="@+id/box4"
+        app:layout_constraintTop_toBottomOf="@+id/box4" />
+
+    <TextView
+        android:id="@+id/box7"
+        style="@style/letterBox"
+        app:layout_constraintEnd_toEndOf="@+id/box2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/box2"
+        app:layout_constraintTop_toBottomOf="@+id/box2" />
+
+    <TextView
+        android:id="@+id/box6"
+        style="@style/letterBox"
+        app:layout_constraintEnd_toEndOf="@+id/box1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/box1"
+        app:layout_constraintTop_toBottomOf="@+id/box1" />
+
+    <TextView
+        android:id="@+id/box8"
+        style="@style/letterBox"
+        app:layout_constraintEnd_toEndOf="@+id/box3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/box3"
+        app:layout_constraintTop_toBottomOf="@+id/box3" />
+
+    <TextView
+        android:id="@+id/box10"
+        style="@style/letterBox"
+        app:layout_constraintEnd_toEndOf="@+id/box5"
+        app:layout_constraintStart_toStartOf="@+id/box5"
+        app:layout_constraintTop_toBottomOf="@+id/box5" />
+
+    <TextView
+        android:id="@+id/box14"
+        style="@style/letterBox"
+        app:layout_constraintEnd_toEndOf="@+id/box4"
+        app:layout_constraintStart_toStartOf="@+id/box4"
+        app:layout_constraintTop_toBottomOf="@+id/box6" />
+
+    <TextView
+        android:id="@+id/box12"
+        style="@style/letterBox"
+        app:layout_constraintEnd_toEndOf="@+id/box2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/box2"
+        app:layout_constraintTop_toBottomOf="@+id/box7" />
+
+    <TextView
+        android:id="@+id/box11"
+        style="@style/letterBox"
+        app:layout_constraintEnd_toEndOf="@+id/box1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/box1"
+        app:layout_constraintTop_toBottomOf="@+id/box8" />
+
+    <TextView
+        android:id="@+id/box13"
+        style="@style/letterBox"
+        app:layout_constraintEnd_toEndOf="@+id/box3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/box3"
+        app:layout_constraintTop_toBottomOf="@+id/box9" />
+
+    <TextView
+        android:id="@+id/box15"
+        style="@style/letterBox"
+        app:layout_constraintEnd_toEndOf="@+id/box5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/box5"
+        app:layout_constraintTop_toBottomOf="@+id/box10" />
+
+    <TextView
+        android:id="@+id/box16"
+        style="@style/letterBox"
+        app:layout_constraintEnd_toEndOf="@+id/box1"
+        app:layout_constraintStart_toStartOf="@+id/box1"
+        app:layout_constraintTop_toBottomOf="@+id/box13" />
+
+    <TextView
+        android:id="@+id/box17"
+        style="@style/letterBox"
+        app:layout_constraintEnd_toEndOf="@+id/box2"
+        app:layout_constraintStart_toStartOf="@+id/box2"
+        app:layout_constraintTop_toBottomOf="@+id/box12" />
+
+    <TextView
+        android:id="@+id/box18"
+        style="@style/letterBox"
+        app:layout_constraintEnd_toEndOf="@+id/box3"
+        app:layout_constraintStart_toStartOf="@+id/box3"
+        app:layout_constraintTop_toBottomOf="@+id/box14" />
+
+    <TextView
+        android:id="@+id/box19"
+        style="@style/letterBox"
+        app:layout_constraintEnd_toEndOf="@+id/box4"
+        app:layout_constraintStart_toStartOf="@+id/box4"
+        app:layout_constraintTop_toBottomOf="@+id/box11" />
+
+    <TextView
+        android:id="@+id/box20"
+        style="@style/letterBox"
+        app:layout_constraintEnd_toEndOf="@+id/box5"
+        app:layout_constraintStart_toStartOf="@+id/box5"
+        app:layout_constraintTop_toBottomOf="@+id/box15" />
+
+    <TextView
+        android:id="@+id/box21"
+        style="@style/letterBox"
+        app:layout_constraintEnd_toEndOf="@+id/box1"
+        app:layout_constraintStart_toStartOf="@+id/box1"
+        app:layout_constraintTop_toBottomOf="@+id/box16" />
+
+    <TextView
+        android:id="@+id/box22"
+        style="@style/letterBox"
+        app:layout_constraintEnd_toEndOf="@+id/box2"
+        app:layout_constraintStart_toStartOf="@+id/box2"
+        app:layout_constraintTop_toBottomOf="@+id/box17" />
+
+    <TextView
+        android:id="@+id/box23"
+        style="@style/letterBox"
+        app:layout_constraintEnd_toEndOf="@+id/box3"
+        app:layout_constraintStart_toStartOf="@+id/box3"
+        app:layout_constraintTop_toBottomOf="@+id/box18" />
+
+    <TextView
+        android:id="@+id/box24"
+        style="@style/letterBox"
+        app:layout_constraintEnd_toEndOf="@+id/box4"
+        app:layout_constraintStart_toStartOf="@+id/box4"
+        app:layout_constraintTop_toBottomOf="@+id/box19" />
+
+    <TextView
+        android:id="@+id/box25"
+        style="@style/letterBox"
+        app:layout_constraintEnd_toEndOf="@+id/box5"
+        app:layout_constraintStart_toStartOf="@+id/box5"
+        app:layout_constraintTop_toBottomOf="@+id/box20" />
+
+    <TextView
+        android:id="@+id/box26"
+        style="@style/letterBox"
+        app:layout_constraintEnd_toEndOf="@+id/box1"
+        app:layout_constraintStart_toStartOf="@+id/box1"
+        app:layout_constraintTop_toBottomOf="@+id/box21" />
+
+    <TextView
+        android:id="@+id/box27"
+        style="@style/letterBox"
+        app:layout_constraintEnd_toEndOf="@+id/box2"
+        app:layout_constraintStart_toStartOf="@+id/box2"
+        app:layout_constraintTop_toBottomOf="@+id/box22" />
+
+    <TextView
+        android:id="@+id/box28"
+        style="@style/letterBox"
+        app:layout_constraintEnd_toEndOf="@+id/box3"
+        app:layout_constraintStart_toStartOf="@+id/box3"
+        app:layout_constraintTop_toBottomOf="@+id/box23" />
+
+    <TextView
+        android:id="@+id/box29"
+        style="@style/letterBox"
+        app:layout_constraintEnd_toEndOf="@+id/box4"
+        app:layout_constraintStart_toStartOf="@+id/box4"
+        app:layout_constraintTop_toBottomOf="@+id/box24" />
+
+    <TextView
+        android:id="@+id/box30"
+        style="@style/letterBox"
+        app:layout_constraintEnd_toEndOf="@+id/box5"
+        app:layout_constraintStart_toStartOf="@+id/box5"
+        app:layout_constraintTop_toBottomOf="@+id/box25" />
+
+    <View
+        android:id="@+id/viewTwo"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="40dp"
+        android:background="#DDD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box28" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/instruction"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewTwo" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/input_hint"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <Button
+        android:id="@+id/guessButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/guess_button"
+        app:layout_constraintEnd_toEndOf="@+id/input"
+        app:layout_constraintStart_toStartOf="@+id/input"
+        app:layout_constraintTop_toBottomOf="@+id/input" />
+
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/error_message"
+        android:textColor="#FF1100"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/input"
+        app:layout_constraintStart_toStartOf="@+id/input"
+        app:layout_constraintTop_toBottomOf="@+id/guessButton" />
+
+    <ImageButton
+        android:id="@+id/refresh"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:srcCompat="@drawable/refreshbutton" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="34dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="360dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
